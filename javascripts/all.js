@@ -1630,7 +1630,7 @@ if ( typeof define === 'function' && define.amd ) {
   };
 
   $(function() {
-    var button, linkBtns, menu, swiper;
+    var body, button, linkBtns, menu, swiper;
     $(window).on('scroll', function() {
       if ($(this).scrollTop() > 0) {
         return $(".main-header").addClass('header-white');
@@ -1653,23 +1653,34 @@ if ( typeof define === 'function' && define.amd ) {
     button = document.querySelector('.js-burger');
     menu = document.querySelector('.js-mobile-menu');
     linkBtns = $('.mobile-menu-section a');
+    body = document.querySelector('body');
     linkBtns.each(function() {
       return $(this).on('click', function() {
         classie.remove(menu, 'open');
-        return classie.remove(button, 'open');
+        classie.remove(button, 'open');
+        return classie.remove(body, 'no-scroll');
       });
     });
     button.onclick = function(e) {
       e.preventDefault();
       classie.toggle(this, 'open');
-      return classie.toggle(menu, 'open');
+      classie.toggle(menu, 'open');
+      return classie.toggle(body, 'no-scroll');
     };
     return swiper = new Swiper('.swiper-container', {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
       },
-      loop: true
+      loop: true,
+      breakpoints: {
+        640: {
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          }
+        }
+      }
     });
   });
 
