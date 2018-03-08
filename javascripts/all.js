@@ -1632,12 +1632,18 @@ if ( typeof define === 'function' && define.amd ) {
   $(function() {
     var body, button, linkBtns, menu, swiper;
     $(window).on('scroll', function() {
-      if ($(this).scrollTop() > 0) {
-        return $(".main-header").addClass('header-white');
-      } else {
-        return $(".main-header").removeClass('header-white');
+      var $main_header, opacity, scroll_top, to_position;
+      $main_header = $(".main-header");
+      scroll_top = $(this).scrollTop();
+      to_position = 100;
+      if (scroll_top <= to_position) {
+        opacity = scroll_top / to_position;
+        return $main_header.css('background-color', 'rgba(255,255,255,' + opacity + ')');
+      } else if ($main_header.css('background-color') !== 'rgba(255,255,255,1)') {
+        return $main_header.css('background-color', 'rgba(255,255,255,1)');
       }
     });
+    $(window).trigger('scroll');
     if ($('.map').length) {
       initMaps(document.querySelector('.map'), 48.917566, 24.722476);
     }
