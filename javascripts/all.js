@@ -1630,7 +1630,7 @@ if ( typeof define === 'function' && define.amd ) {
   };
 
   $(function() {
-    var body, button, linkBtns, menu, swiper;
+    var body, button, linkBtns, menu, swiper, swiper2;
     $(window).on('scroll', function() {
       var $main_header, opacity, scroll_top, to_position;
       $main_header = $(".main-header");
@@ -1673,7 +1673,7 @@ if ( typeof define === 'function' && define.amd ) {
       classie.toggle(menu, 'open');
       return classie.toggle(body, 'no-scroll');
     };
-    return swiper = new Swiper('.swiper-container', {
+    swiper = new Swiper('.swiper-container', {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
@@ -1686,6 +1686,17 @@ if ( typeof define === 'function' && define.amd ) {
             clickable: true
           }
         }
+      }
+    });
+    return swiper2 = new Swiper('.wallpapers-swiper', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction'
       }
     });
   });
