@@ -1630,7 +1630,7 @@ if ( typeof define === 'function' && define.amd ) {
   };
 
   $(function() {
-    var body, button, linkBtns, menu, swiper, swiper2;
+    var body, button, linkBtns, menu, scrollTo, swiper, swiper2;
     $(window).on('scroll', function() {
       var $main_header, opacity, scroll_top, to_position;
       $main_header = $(".main-header");
@@ -1648,14 +1648,27 @@ if ( typeof define === 'function' && define.amd ) {
       initMaps(document.querySelector('.map'), 48.917566, 24.722476);
     }
     $('.js-scroll-menu-link').on('click', function(e) {
-      var destination, id;
-      e.preventDefault();
-      id = $(this).attr('href');
+      var current_pathname, link_hash, link_pathname, link_uri;
+      link_uri = $(this).attr('href');
+      link_pathname = link_uri.split('#')[0];
+      link_hash = link_uri.split('#')[1];
+      current_pathname = $(location).attr('pathname');
+      if (current_pathname === link_pathname) {
+        e.preventDefault();
+      } else {
+        return;
+      }
+      if (typeof link_hash !== "undefined") {
+        return scrollTo('#' + link_hash);
+      }
+    });
+    scrollTo = function(id) {
+      var destination;
       destination = $(id).offset().top;
       return $('html, body').animate({
         scrollTop: destination
       }, 1100);
-    });
+    };
     button = document.querySelector('.js-burger');
     menu = document.querySelector('.js-mobile-menu');
     linkBtns = $('.mobile-menu-section a');

@@ -1621,6 +1621,11 @@ a:hover {
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 1px; }
+  .event a {
+    color: #000;
+    text-decoration: underline; }
+    .event a:hover {
+      text-decoration: none; }
 
 .coffee-break-box,
 .lunch-box,
@@ -1675,7 +1680,7 @@ a:hover {
   background-size: cover;
   padding: 100px 0 40px; }
   .workshop-tickets-section .section-heading {
-    padding: 0 0 60px; }
+    padding: 40px 0 60px; }
     .workshop-tickets-section .section-heading h3 {
       color: #fff; }
 
@@ -3115,6 +3120,15 @@ td {
 
 .shirt {
   padding-bottom: 90px; }
+  .shirt .shirt-heading {
+    font-family: "gilroy-regular", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px; }
   .shirt__item {
     padding: 0 85px; }
     .shirt__item .img-bg {
@@ -3175,38 +3189,36 @@ td {
       color: #fff;
       background: #000; }
 
-.socks {
-  padding-bottom: 100px; }
-  .socks .thin {
-    padding: 70px 0; }
-    .socks .thin .color {
-      left: auto;
-      right: 7px;
-      width: 107px;
-      background: #00756f; }
-  .socks__photo {
-    width: 40%;
-    text-align: right; }
-  .socks__info {
-    width: 60%;
-    padding-left: 85px; }
-    .socks__info P {
-      font-family: "gilroy-regular", sans-serif;
-      font-size: 16px;
-      line-height: 30px;
-      color: #000;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      padding: 30px 0; }
-    .socks__info .buy-btn {
-      width: auto;
-      margin-top: 90px; }
-      .socks__info .buy-btn:hover {
-        color: #fff;
-        background: #000; }
+.socks .thin {
+  padding: 70px 0; }
+  .socks .thin .color {
+    left: auto;
+    right: 7px;
+    width: 107px;
+    background: #00756f; }
+.socks__photo {
+  width: 40%;
+  text-align: right; }
+.socks__info {
+  width: 60%;
+  padding-left: 85px; }
+  .socks__info P {
+    font-family: "gilroy-regular", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 30px 0; }
+  .socks__info .buy-btn {
+    width: auto;
+    margin-top: 90px; }
+    .socks__info .buy-btn:hover {
+      color: #fff;
+      background: #000; }
 
 .mediakit .section-heading {
-  padding-bottom: 100px; }
+  padding: 60px 0 100px; }
 .mediakit__download {
   vertical-align: middle; }
   .mediakit__download a {
@@ -3239,19 +3251,24 @@ td {
     width: 215px;
     background: #00756f; }
 
-.wallpapers-swiper {
-  padding-bottom: 80px; }
-
 .wallpapers-swiper .swiper-pagination {
   font-family: "gilroy-light", sans-serif;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 10px;
   color: #a3a3a3;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  padding: 0 30px;
   width: auto; }
+.wallpapers-swiper .swiper-pagination-box {
+  position: absolute;
+  width: 240px;
+  margin: 0 auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 110px;
+  z-index: 10; }
 .wallpapers-swiper .swiper-pagination-current {
   color: #ff0000; }
 .wallpapers-swiper .swiper-button-next, .wallpapers-swiper .swiper-button-prev {
@@ -3260,9 +3277,14 @@ td {
   width: 18px;
   height: 31px;
   background-size: auto; }
+.wallpapers-swiper .swiper-button-prev {
+  left: 50px; }
+.wallpapers-swiper .swiper-button-next {
+  right: 50px; }
 
 .download-wallpapers {
   text-align: center;
+  margin-top: 100px;
   padding: 25px 0; }
   .download-wallpapers__item {
     width: 12%;
