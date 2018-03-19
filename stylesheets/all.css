@@ -837,7 +837,7 @@ a:hover {
   vertical-align: top;
   width: 467px;
   height: 109px;
-  background: url(../images/main-logo.png) no-repeat;
+  background: url(../images/main-logo.svg) no-repeat;
   background-position: center center;
   background-size: cover; }
 
@@ -868,13 +868,13 @@ a:hover {
   display: block;
   width: 22px;
   height: 23px;
-  background: url(../images/instagram-ico.png) no-repeat;
+  background: url(../images/header-instagram-ico.svg) no-repeat;
   background-position: center center; }
 .social-icons__item--facebook {
   display: block;
   width: 22px;
   height: 23px;
-  background: url(../images/facebook-ico.png) no-repeat;
+  background: url(../images/header-facebook-ico.svg) no-repeat;
   background-position: center center; }
 
 .menu-btn {
@@ -1076,10 +1076,10 @@ a:hover {
     .main-footer .social-icons__item {
       margin-left: 0; }
     .main-footer .social-icons__item--instagram {
-      background: url(../images/instagram-black-ico.png) no-repeat;
+      background: url(../images/footer-instagram-ico.svg) no-repeat;
       background-position: center center; }
     .main-footer .social-icons__item--facebook {
-      background: url(../images/facebook-black-ico.png) no-repeat;
+      background: url(../images/footer-facebook-ico.svg) no-repeat;
       background-position: center center;
       margin-left: 30px; }
   .main-footer .telephone {
@@ -1417,19 +1417,37 @@ a:hover {
     display: block;
     width: 24px;
     height: 24px;
-    background: url(../images/speaker-social-twitter.png) no-repeat;
+    background: url(../images/socials-twitter-ico.svg) no-repeat;
     background-position: center center; }
   .speaker-social__link--instagram {
     display: block;
     width: 24px;
     height: 24px;
-    background: url(../images/speaker-social-instagram.png) no-repeat;
+    background: url(../images/socials-instagram-ico.svg) no-repeat;
     background-position: center center; }
   .speaker-social__link--facebook {
     display: block;
     width: 24px;
     height: 24px;
-    background: url(../images/speaker-social-facebook.png) no-repeat;
+    background: url(/images/socials-facebook-ico.png) no-repeat;
+    background-position: center center; }
+  .speaker-social__link--linkedin {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/socials-linkedin-ico.svg) no-repeat;
+    background-position: center center; }
+  .speaker-social__link--dribbble {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/socials-dribbble-ico.svg) no-repeat;
+    background-position: center center; }
+  .speaker-social__link--behince {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(/images/socials-behince-ico.svg) no-repeat;
     background-position: center center; }
 
 .schedule-section {
@@ -1780,7 +1798,7 @@ a:hover {
   font-family: "gilroy-bold", sans-serif;
   color: #000;
   text-transform: inherit;
-  height: 146px;
+  height: 143px;
   padding: 20px 0; }
 
 .price {
@@ -1799,7 +1817,7 @@ a:hover {
   vertical-align: middle;
   font-family: "gilroy-regular", sans-serif;
   font-size: 12px;
-  line-height: 20px;
+  line-height: 23px;
   color: #000;
   padding-left: 20px; }
   .facebook::before {
@@ -1808,9 +1826,9 @@ a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 8px;
-    height: 19px;
-    background: url(../images/facebook-blue-ico.png) no-repeat;
+    width: 10px;
+    height: 23px;
+    background: url(../images/workshop-facebook-ico.svg) no-repeat;
     background-position: left center; }
 
 .registration {
@@ -1883,11 +1901,11 @@ a:hover {
       height: 14px; }
   .exhibition-list__info .facebook {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 23px;
     color: #fff; }
     .exhibition-list__info .facebook::before {
-      height: 21px;
-      background: url(../images/facebook-white-ico.png) no-repeat;
+      height: 23px;
+      background: url(../images/exhibition-facebook-ico.svg) no-repeat;
       background-position: left center; }
   .exhibition-list__info .exhibition-author {
     font-family: "gilroy-regular", sans-serif;
@@ -1934,7 +1952,7 @@ a:hover {
   line-height: 40px;
   text-transform: uppercase;
   text-align: center;
-  padding: 30px 0; }
+  padding: 60px 0 30px; }
 
 .small-text {
   padding: 0;
@@ -1944,15 +1962,16 @@ a:hover {
 .jury {
   text-align: center; }
   .jury__item {
-    width: 33.3333%;
+    width: 25%;
     padding: 0 20px 60px; }
   .jury__name {
+    display: block;
     font-family: "gilroy-light", sans-serif;
     font-size: 18px;
     line-height: 20px;
     color: #262626;
     text-transform: uppercase;
-    padding: 30px 0 18px; }
+    margin: 30px 0 20px; }
   .jury__info p {
     font-family: "gilroy-light", sans-serif;
     font-size: 14px;
@@ -2002,6 +2021,9 @@ a:hover {
   .where div span {
     font-family: "gilroy-bold", sans-serif;
     background: #ffff00; }
+
+.where span {
+  font-size: 12px; }
 
 .street {
   padding-left: 40px; }
@@ -2346,6 +2368,9 @@ a:hover {
     padding-top: 20px; }
     .speaker-social__item {
       margin-right: 20px; }
+
+  .jury__item {
+    width: 50%; }
 
   .workshop-box {
     padding-left: 10px; }
@@ -3144,6 +3169,9 @@ td {
     color: #fff;
     background: #000; }
 
+.shirt-swiper {
+  display: none; }
+
 .bag {
   position: relative; }
   .bag::before {
@@ -3182,10 +3210,10 @@ td {
     letter-spacing: 3px;
     text-transform: uppercase;
     padding: 30px 0; }
-  .bag__info .buy-btn {
+  .bag .buy-btn {
     width: auto;
     margin-top: 110px; }
-    .bag__info .buy-btn:hover {
+    .bag .buy-btn:hover {
       color: #fff;
       background: #000; }
 
@@ -3248,7 +3276,7 @@ td {
   .wallpapers .thin .color {
     left: 100px;
     right: auto;
-    width: 215px;
+    width: 110px;
     background: #00756f; }
 
 .wallpapers-swiper .swiper-pagination {
@@ -3319,6 +3347,131 @@ td {
   -webkit-transition: all .4s;
   transition: all .4s; }
 
+@media screen and (max-width: 1024px) {
+  .thin {
+    padding: 50px 0 50px; }
+
+  .shirt__item {
+    padding: 0 50px; }
+
+  .bag {
+    padding-bottom: 10px; }
+    .bag .img-bg {
+      height: 390px; }
+    .bag .buy-btn {
+      margin-top: 30px; }
+
+  .socks__info .buy-btn {
+    margin-top: 40px; }
+
+  .mediakit .section-heading {
+    padding: 0 0 50px; }
+  .mediakit__download--link {
+    padding: 0 150px 0 20px; }
+  .mediakit__logo .logo-bg {
+    height: 420px;
+    background: url(../images/mediakit-logo.png) no-repeat;
+    background-position: left 70px center; }
+
+  .wallpapers .thin {
+    padding: 50px 0; }
+
+  .download-wallpapers {
+    margin-top: 80px; }
+    .download-wallpapers__item {
+      width: 22%; } }
+@media screen and (max-width: 960px) {
+  .shirt__item {
+    padding: 0 35px; }
+    .shirt__item .img-bg {
+      height: 462px; }
+    .shirt__item .buy-btn {
+      padding: 10px; }
+
+  .shirt__item {
+    padding: 0 35px; }
+
+  .bag__photo {
+    padding: 0 35px; }
+  .bag .img-bg {
+    height: 390px; } }
+@media screen and (max-width: 768px) {
+  .shirt__item .img-bg {
+    height: 350px; }
+
+  .bag .img-bg {
+    height: 360px; }
+  .bag__info p {
+    font-size: 12px;
+    line-height: 30px; }
+  .bag .buy-btn {
+    padding: 10px 80px; }
+
+  .socks__info {
+    padding-left: 35px; }
+    .socks__info P {
+      font-size: 12px;
+      line-height: 30px; }
+
+  .mediakit .section-heading {
+    padding: 50px 0 50px; }
+  .mediakit__download--link {
+    padding: 0 120px 0 20px; }
+  .mediakit__logo .logo-bg {
+    height: 420px;
+    background: url(../images/mediakit-logo.png) no-repeat;
+    background-position: center center; } }
+@media screen and (max-width: 767px) {
+  .shirt-swiper {
+    display: block; }
+
+  .shirt {
+    display: none; }
+
+  .shirt-swiper .shirt-heading {
+    font-family: "gilroy-regular", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+    text-align: center; }
+  .shirt-swiper .shirt__item--link {
+    text-align: center;
+    padding-bottom: 60px; }
+  .shirt-swiper .buy-btn {
+    width: auto;
+    margin-top: 40px;
+    padding: 10px 20px; }
+
+  .bag .thin {
+    padding: 50px 0 0; }
+  .bag .img-bg {
+    width: 330px;
+    height: 400px;
+    margin: 0 auto; }
+  .bag__photo {
+    width: 100%; }
+    .bag__photo.pull-left {
+      float: inherit; }
+  .bag__info {
+    width: 100%; }
+  .bag .buy-btn {
+    margin-top: 40px; }
+
+  .socks__photo {
+    width: 100%;
+    text-align: center; }
+  .socks__info {
+    width: 100%; }
+
+  .mediakit {
+    display: none; }
+
+  .wallpapers {
+    display: none; } }
 .mobile-menu-section {
   position: fixed;
   top: 0;

@@ -1630,7 +1630,7 @@ if ( typeof define === 'function' && define.amd ) {
   };
 
   $(function() {
-    var body, button, linkBtns, menu, scrollTo, swiper, swiper2;
+    var body, button, linkBtns, menu, scrollTo, swiper, swiper2, swiper3;
     $(window).on('scroll', function() {
       var $main_header, opacity, scroll_top, to_position;
       $main_header = $(".main-header");
@@ -1701,7 +1701,7 @@ if ( typeof define === 'function' && define.amd ) {
         }
       }
     });
-    return swiper2 = new Swiper('.wallpapers-swiper', {
+    swiper2 = new Swiper('.wallpapers-swiper', {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
@@ -1711,6 +1711,13 @@ if ( typeof define === 'function' && define.amd ) {
         el: '.swiper-pagination',
         type: 'fraction'
       }
+    });
+    return swiper3 = new Swiper('.shirt-swiper', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      loop: true
     });
   });
 
