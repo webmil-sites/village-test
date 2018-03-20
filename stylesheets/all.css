@@ -835,7 +835,7 @@ a:hover {
 .main-logo {
   display: inline-block;
   vertical-align: top;
-  width: 467px;
+  width: 468px;
   height: 109px;
   background: url(../images/main-logo.svg) no-repeat;
   background-position: center center;
@@ -1429,7 +1429,7 @@ a:hover {
     display: block;
     width: 24px;
     height: 24px;
-    background: url(/images/socials-facebook-ico.png) no-repeat;
+    background: url(../images/socials-facebook-ico.svg) no-repeat;
     background-position: center center; }
   .speaker-social__link--linkedin {
     display: block;
@@ -1443,11 +1443,11 @@ a:hover {
     height: 24px;
     background: url(../images/socials-dribbble-ico.svg) no-repeat;
     background-position: center center; }
-  .speaker-social__link--behince {
+  .speaker-social__link--behence {
     display: block;
     width: 24px;
     height: 24px;
-    background: url(/images/socials-behince-ico.svg) no-repeat;
+    background: url(../images/socials-behance-ico.svg) no-repeat;
     background-position: center center; }
 
 .schedule-section {
@@ -2918,7 +2918,7 @@ a:hover {
     background: url(../images/village.png) no-repeat;
     background-position: center center; }
   .partnership-section .section-heading {
-    padding: 80px 0; }
+    padding: 40px 0 80px; }
     .partnership-section .section-heading h3 {
       text-transform: inherit;
       letter-spacing: inherit; }
@@ -2930,9 +2930,8 @@ a:hover {
   max-width: 650px;
   margin: 0 auto; }
   .partnership-description p {
-    font-size: 20px;
-    line-height: 26px;
-    width: 556px; }
+    font-size: 18px;
+    line-height: 28px; }
 
 .table {
   padding: 100px 0; }
@@ -3238,12 +3237,12 @@ td {
     letter-spacing: 3px;
     text-transform: uppercase;
     padding: 30px 0; }
-  .socks__info .buy-btn {
-    width: auto;
-    margin-top: 90px; }
-    .socks__info .buy-btn:hover {
-      color: #fff;
-      background: #000; }
+.socks .buy-btn {
+  width: auto;
+  margin: 90px 0 0 85px; }
+  .socks .buy-btn:hover {
+    color: #fff;
+    background: #000; }
 
 .mediakit .section-heading {
   padding: 60px 0 100px; }
@@ -3412,6 +3411,8 @@ td {
     .socks__info P {
       font-size: 12px;
       line-height: 30px; }
+  .socks .buy-btn {
+    margin: 40px 0 0 35px; }
 
   .mediakit .section-heading {
     padding: 50px 0 50px; }
@@ -3459,13 +3460,24 @@ td {
   .bag__info {
     width: 100%; }
   .bag .buy-btn {
-    margin-top: 40px; }
+    display: block;
+    width: 300px;
+    margin: 40px auto;
+    padding: 10px 0; }
 
   .socks__photo {
     width: 100%;
     text-align: center; }
+    .socks__photo.pull-right {
+      float: inherit; }
   .socks__info {
-    width: 100%; }
+    width: 100%;
+    padding-left: 0; }
+  .socks .buy-btn {
+    display: block;
+    width: 300px;
+    margin: 40px auto;
+    padding: 10px 0; }
 
   .mediakit {
     display: none; }
