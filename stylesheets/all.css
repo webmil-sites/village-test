@@ -3162,7 +3162,7 @@ td {
       height: 462px; }
   .shirt__item--link:hover .img-bg {
     background-color: #054841;
-    border: 4px solid #054841;
+    border: 4px solid #fff;
     border-bottom: none; }
   .shirt__item--link:hover .buy-btn {
     color: #fff;
