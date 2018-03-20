@@ -1645,7 +1645,7 @@ if ( typeof define === 'function' && define.amd ) {
     });
     $(window).trigger('scroll');
     if ($('.map').length) {
-      initMaps(document.querySelector('.map'), 48.917566, 24.722476);
+      initMaps(document.querySelector('.map'), 48.915807, 24.711566);
     }
     $('.js-scroll-menu-link').on('click', function(e) {
       var current_pathname, link_hash, link_pathname, link_uri;
