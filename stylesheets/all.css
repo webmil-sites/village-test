@@ -2549,8 +2549,8 @@ a:hover {
   .swiper-pagination-bullet-active {
     background: #ff0000; }
 
-  .swiper-button-next,
-  .swiper-button-prev {
+  .description-box .swiper-button-next,
+  .description-box .swiper-button-prev {
     display: none; }
 
   .speakers-section {
@@ -3156,7 +3156,6 @@ td {
   .shirt__item {
     padding: 0 85px; }
     .shirt__item .img-bg {
-      background-color: #054841;
       border: 4px solid #000;
       border-bottom: none;
       height: 462px; }
@@ -3454,7 +3453,8 @@ td {
     height: 400px;
     margin: 0 auto; }
   .bag__photo {
-    width: 100%; }
+    width: 100%;
+    text-align: center; }
     .bag__photo.pull-left {
       float: inherit; }
   .bag__info {
@@ -3465,6 +3465,8 @@ td {
     margin: 40px auto;
     padding: 10px 0; }
 
+  .socks .thin {
+    padding: 0; }
   .socks__photo {
     width: 100%;
     text-align: center; }
