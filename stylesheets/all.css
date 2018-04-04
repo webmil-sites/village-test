@@ -1628,9 +1628,10 @@ a:hover {
     display: none; }
 
 .event {
-  max-width: 420px;
+  max-width: 400px;
   padding: 11px 0 0 20px; }
   .event h6 {
+    display: inline-block;
     position: relative;
     font-family: "gilroy-bold", sans-serif;
     letter-spacing: 2px;
@@ -1644,6 +1645,30 @@ a:hover {
     text-decoration: underline; }
     .event a:hover {
       text-decoration: none; }
+  .event .tooltip {
+    display: inline-block;
+    position: relative;
+    background: #000;
+    padding: 0 2px 0 4px; }
+    .event .tooltip .tooltiptext {
+      position: absolute;
+      left: 0;
+      bottom: 110%;
+      width: 130px;
+      font-family: "gilroy-bold", sans-serif;
+      font-size: 9px;
+      line-height: 10px;
+      letter-spacing: inherit;
+      color: #000;
+      background: #fff;
+      text-align: center;
+      text-transform: lowercase;
+      border: 1px solid #000;
+      padding: 2px 0 2px 3px;
+      visibility: hidden;
+      z-index: 1; }
+    .event .tooltip:hover .tooltiptext {
+      visibility: visible; }
 
 .coffee-break-box,
 .lunch-box,
@@ -1855,6 +1880,8 @@ a:hover {
       font-size: 24px;
       line-height: 26px;
       color: #000; }
+  .registration .eng-reg h4 {
+    letter-spacing: 3px; }
 
 .radius {
   position: absolute;
@@ -2032,6 +2059,17 @@ a:hover {
     font-size: 16px;
     line-height: 20px;
     padding: 0; }
+
+.products-section {
+  text-align: center; }
+  .products-section .section-heading .color {
+    left: 0; }
+  .products-section img {
+    margin-top: -100px;
+    margin-bottom: -60px; }
+  .products-section .buy-btn {
+    width: auto;
+    z-index: 10; }
 
 .contacts-section {
   background: url(../images/map-bg.png) no-repeat;
@@ -2385,6 +2423,10 @@ a:hover {
       .tickets__item:nth-child(odd) {
         float: inherit; }
 
+  .products-section img {
+    margin-top: -50px;
+    margin-bottom: -20px; }
+
   .contacts-info {
     padding-left: 20px; }
 
@@ -2427,7 +2469,15 @@ a:hover {
     width: 33.3333%; }
 
   .location {
-    width: 33.3333%; } }
+    width: 33.3333%; }
+
+  .products-section .section-heading {
+    padding: 30px 0 0; }
+  .products-section img {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .products-section .buy-btn {
+    margin-bottom: 20px; } }
 @media screen and (max-width: 640px) {
   .bent-wrap {
     height: auto; }
@@ -2811,6 +2861,14 @@ a:hover {
     .portfolio-places .partnership-btn {
       padding: 40px 0 0; }
 
+  .products-section .section-heading {
+    padding: 30px 0 0; }
+  .products-section img {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .products-section .buy-btn {
+    padding: 10px 20px; }
+
   .contacts-section {
     padding: 0;
     background: #fff; }
@@ -2895,7 +2953,10 @@ a:hover {
     width: 33.3333%; } }
 @media screen and (max-width: 375px) {
   .partners__item {
-    width: 50%; } }
+    width: 50%; }
+
+  .products-section .section-heading .color {
+    display: none; } }
 .partnership-section {
   position: relative;
   background: #fff;
