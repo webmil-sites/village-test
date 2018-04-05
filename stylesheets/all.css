@@ -2061,10 +2061,25 @@ a:hover {
     padding: 0; }
 
 .products-section {
+  position: relative;
   text-align: center; }
   .products-section .section-heading .color {
     left: 0; }
+  .products-section .products-img {
+    position: relative; }
+  .products-section .products-bg {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 100%;
+    height: 0;
+    background: #1f655d;
+    padding-top: 30%; }
   .products-section img {
+    position: relative;
+    width: 100%;
+    height: auto;
     margin-top: -100px;
     margin-bottom: -60px; }
   .products-section .buy-btn {
@@ -2253,7 +2268,10 @@ a:hover {
     padding: 20px 0; }
 
   .partners-heading {
-    padding: 65px 0; } }
+    padding: 65px 0; }
+
+  .products-section img {
+    margin-top: -90px; } }
 @media screen and (max-width: 1366px) {
   .line-two .grey-stripe {
     left: 500px; }
@@ -2338,7 +2356,10 @@ a:hover {
     padding: 60px 0 0; }
 
   .numbers h5 {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .products-section img {
+    margin-top: -80px; } }
 @media screen and (max-width: 960px) {
   .one {
     top: 255px;
@@ -2424,7 +2445,7 @@ a:hover {
         float: inherit; }
 
   .products-section img {
-    margin-top: -50px;
+    margin-top: -40px;
     margin-bottom: -20px; }
 
   .contacts-info {
@@ -2474,7 +2495,7 @@ a:hover {
   .products-section .section-heading {
     padding: 30px 0 0; }
   .products-section img {
-    margin-top: 0;
+    margin-top: -10px;
     margin-bottom: 0; }
   .products-section .buy-btn {
     margin-bottom: 20px; } }
@@ -2863,9 +2884,6 @@ a:hover {
 
   .products-section .section-heading {
     padding: 30px 0 0; }
-  .products-section img {
-    margin-top: 0;
-    margin-bottom: 0; }
   .products-section .buy-btn {
     padding: 10px 20px; }
 
