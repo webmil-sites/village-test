@@ -1939,6 +1939,8 @@ a:hover {
     font-size: 16px;
     line-height: 20px;
     padding: 51px 0 15px; }
+  .exhibition-list__info .hide-author {
+    opacity: 0; }
   .exhibition-list__info .exhibition-name {
     font-family: "gilroy-regular", sans-serif;
     font-size: 16px;
