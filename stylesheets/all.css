@@ -1742,7 +1742,7 @@ a:hover {
   width: 28%;
   border-right: 1px solid #000; }
   .numbers h5 {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 20px;
     letter-spacing: 3px;
     text-transform: lowercase; }
@@ -2758,7 +2758,7 @@ a:hover {
     width: 100%;
     border: 1px solid #000; }
     .numbers h5 {
-      font-size: 17px; }
+      font-size: 18px; }
 
   .data,
   .start,
