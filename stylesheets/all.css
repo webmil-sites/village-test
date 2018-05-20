@@ -2180,8 +2180,6 @@ a:hover {
   vertical-align: middle;
   text-align: center;
   padding: 35px; }
-  .media-partner__item:nth-child(-n+4) {
-    width: 25%; }
 
 @media screen and (max-width: 1440px) {
   .one {
