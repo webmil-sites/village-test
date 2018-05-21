@@ -1087,6 +1087,17 @@ a:hover {
     vertical-align: middle;
     padding: 0; }
 
+.webmil {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 49px;
+  height: 39px;
+  background: url(../images/webmil-logo.svg) no-repeat;
+  z-index: 5; }
+
 .copyright {
   vertical-align: middle; }
   .copyright p {
@@ -1158,6 +1169,9 @@ a:hover {
       font-size: 14px;
       letter-spacing: 1px;
       background: #00756f; }
+  .mobile-footer .webmil-box {
+    position: relative;
+    padding: 50px 0; }
 
 .bent-wrap {
   position: relative;
@@ -1767,6 +1781,11 @@ a:hover {
     height: 28px;
     background-position: center center;
     z-index: 1; }
+  .data.double-fild,
+  .start.double-fild,
+  .duration.double-fild,
+  .places.double-fild {
+    padding: 10px 0 10px 48px; }
 
 .places {
   border-bottom: none; }
@@ -2699,7 +2718,7 @@ a:hover {
       .schedule__item .event .lunch,
       .schedule__item .event .party {
         position: absolute;
-        top: auto;
+        top: -17px;
         left: 0;
         bottom: 0;
         background: #ff0000;
