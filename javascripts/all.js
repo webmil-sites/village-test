@@ -1611,7 +1611,7 @@ if ( typeof define === 'function' && define.amd ) {
     if (!el) {
       return;
     }
-    mapIcon = 'images/marker-ico.png';
+    mapIcon = 'http://designvillage.com.ua/images/marker-ico.png';
     mapCenter = {
       lat: mapLat,
       lng: mapLng
