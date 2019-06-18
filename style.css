@@ -35,8 +35,15 @@ body {
 .top__block {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   position: relative;
+  flex-direction: column;
+}
+.top__block-left {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-end;
 }
 .top__block-left .date {
   font-size: 6rem;
@@ -53,9 +60,7 @@ body {
 
 .city {
   font-family: "Open Sans", sans-serif;
-  position: absolute;
   left: 0;
-  bottom: -4rem;
   font-size: 24px;
 }
 
@@ -102,31 +107,39 @@ body {
 
   .top__block {
     margin-top: 6rem;
-    height: 55%;
+    height: 60%;
     flex-direction: column;
     align-items: flex-start;
   }
   .top__block .year {
-    font-size: 4rem;
+    font-size: 8rem;
     margin-top: 2rem;
   }
   .top__block-right {
-    margin: 0 100%;
-    transform: translateX(-100%);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .top__block-left {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .city {
-    bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .bottom__block {
-    height: 45%;
+    height: 40%;
   }
 
   .bottom__block-b {
     flex-direction: column;
     align-items: flex-start;
     height: 100%;
+  }
+  .bottom__block-b .notify {
+    margin-top: 2rem;
   }
   .bottom__block-b a {
     margin-bottom: 4rem;
@@ -155,6 +168,16 @@ body {
   }
   .top__block .date {
     font-size: 3rem;
+  }
+  .top__block .year {
+    position: absolute;
+    right: 0;
+    bottom: 0rem;
+    font-size: 4rem;
+  }
+  .top__block-left {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .bottom__block {
